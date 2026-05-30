@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 2</title>
+
+    <link rel="stylesheet" href="../exercicio.css">
+  </head>
+  <body>
+    <input type="text" id="campoTexto" placeholder="Digitar texto..." />
+    <button onclick="mostrarTexto()">Mostrar</button>
+    <button onclick="limparTexto()">Limpar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+      function mostrarTexto() {
+        const input = document.getElementById("campoTexto").value;
+        document.getElementById("resultado").innerText = input;
+      }
+
+      function limparTexto() {
+        document.getElementById("resultado").innerText = "";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 3</title>
+
+    <link rel="stylesheet" href="../exercicio.css">
+  </head>
+  <body>
+    <p>Pergunta generica enunciado?</p>
+    <button onclick="verificar(false)">Opcao A</button>
+    <button onclick="verificar(true)">Opcao B (Correta)</button>
+    <button onclick="verificar(false)">Opcao C</button>
+
+    <p id="respostaFeedback"></p>
+
+    <script>
+      function verificar(isCorrect) {
+        const feedback = document.getElementById("respostaFeedback");
+        if (isCorrect) {
+          feedback.innerText = "Resultado: Correto.";
+        } else {
+          feedback.innerText = "Resultado: Incorreto.";
+        }
+      }
+    </script>
+  </body>
+</html>

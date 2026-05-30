@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 6</title>
+
+    <link rel="stylesheet" href="../exercicio.css">
+  </head>
+  <body>
+    <div style="display: flex; gap: 10px; margin-bottom: 20px">
+      <div
+        id="cantoVermelho"
+        style="
+          width: 50px;
+          height: 50px;
+          border: 1px solid black;
+          border-radius: 50%;
+        "
+      ></div>
+      <div
+        id="cantoAmarelo"
+        style="
+          width: 50px;
+          height: 50px;
+          border: 1px solid black;
+          border-radius: 50%;
+        "
+      ></div>
+      <div
+        id="cantoVerde"
+        style="
+          width: 50px;
+          height: 50px;
+          border: 1px solid black;
+          border-radius: 50%;
+        "
+      ></div>
+    </div>
+
+    <button onclick="mudarCor('vermelho')">Acender Vermelho</button>
+    <button onclick="mudarCor('amarelo')">Acender Amarelo</button>
+    <button onclick="mudarCor('verde')">Acender Verde</button>
+
+    <script>
+      function mudarCor(cor) {
+        // Reset basico das cores de fundo
+        document.getElementById("cantoVermelho").style.backgroundColor =
+          "transparent";
+        document.getElementById("cantoAmarelo").style.backgroundColor =
+          "transparent";
+        document.getElementById("cantoVerde").style.backgroundColor =
+          "transparent";
+
+        if (cor === "vermelho") {
+          document.getElementById("cantoVermelho").style.backgroundColor =
+            "red";
+        } else if (cor === "amarelo") {
+          document.getElementById("cantoAmarelo").style.backgroundColor =
+            "yellow";
+        } else if (cor === "verde") {
+          document.getElementById("cantoVerde").style.backgroundColor = "green";
+        }
+      }
+    </script>
+  </body>
+</html>

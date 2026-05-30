@@ -1,0 +1,13 @@
+body {
+    background-color: #3e4041;
+    min-height: 100vh;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(
+    135deg,
+    #1a1a1a 0%,
+    #2b2b2b 35%,
+    #242424 65%,
+    #151515 100%
+  );
+}

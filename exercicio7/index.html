@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 7</title>
+
+    <link rel="stylesheet" href="../exercicio.css">
+  </head>
+  <body>
+    <input type="number" id="numeroInput" placeholder="Numero..." />
+    <button onclick="gerarTabuada()">Gerar</button>
+
+    <div id="containerTabuada"></div>
+
+    <script>
+      function gerarTabuada() {
+        const numero = parseInt(document.getElementById("numeroInput").value);
+        const container = document.getElementById("containerTabuada");
+        container.innerHTML = ""; // Limpa anterior
+
+        if (!isNaN(numero)) {
+          for (let i = 1; i <= 10; i++) {
+            const p = document.createElement("p");
+            p.innerText = numero + " x " + i + " = " + numero * i;
+            container.appendChild(p);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

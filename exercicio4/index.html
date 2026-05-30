@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 4</title>
+
+    <link rel="stylesheet" href="../exercicio.css">
+  </head>
+  <body>
+    <input type="text" id="itemInput" placeholder="Item da lista..." />
+    <button onclick="adicionarItem()">Adicionar</button>
+
+    <ul id="listaItens"></ul>
+
+    <script>
+      function adicionarItem() {
+        const input = document.getElementById("itemInput");
+        if (input.value.trim() !== "") {
+          const li = document.createElement("li");
+          li.innerText = input.value;
+          document.getElementById("listaItens").appendChild(li);
+          input.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>

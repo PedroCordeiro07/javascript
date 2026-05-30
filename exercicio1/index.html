@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 1</title>
+
+    <link rel="stylesheet" href="../exercicio.css">
+  </head>
+  <body>
+    <p id="conteudo">Texto generico para testar a visibilidade do elemento.</p>
+    <button onclick="alternarVisibilidade()">Alternar</button>
+
+    <script>
+      function alternarVisibilidade() {
+        const elemento = document.getElementById("conteudo");
+        if (elemento.style.display === "none") {
+          elemento.style.display = "block";
+        } else {
+          elemento.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
